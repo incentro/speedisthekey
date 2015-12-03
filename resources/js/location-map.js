@@ -9,29 +9,29 @@
                 style: google.maps.ZoomControlStyle.DEFAULT,
             },
             disableDoubleClickZoom: true,
-            mapTypeControl: false,
+            mapTypeControl: true,
             scaleControl: true,
-            scrollwheel: false,
+            scrollwheel: true,
             panControl: true,
             streetViewControl: true,
             draggable : true,
             overviewMapControl: true,
             overviewMapControlOptions: {
-                opened: false,
+                opened: true,
             },
             mapTypeId: google.maps.MapTypeId.ROADMAP,
         }
         var mapElement = document.getElementById('location-map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['Incentro Hippo', 'undefined', 'undefined', 'undefined', 'undefined', 51.9232397, 4.433419700000059, 'https://mapbuildr.com/assets/img/markers/default.png']
+['Incentro - Hippo Event', 'Incentro Rotterdam<br />(building \'Koffie\', unit 2429, 4th floor)<br />Van Nelleweg 1<br />3044BC Rotterdam', '+31 (0)10 20 20 544', 'undefined', 'http://www.incentro.com/', 51.9232397, 4.433419700000059, 'https://mapbuildr.com/assets/img/markers/default.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
 			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
 			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
-           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
-           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+                                    if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+                                    if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
             marker = new google.maps.Marker({
                 icon: markericon,
                 position: new google.maps.LatLng(locations[i][5], locations[i][6]),
@@ -42,6 +42,37 @@
                 email: email,
                 web: web
             });
-link = '';     }
-
-}
+        if (web.substring(0, 7) != "http://") {
+        link = "http://" + web;
+        } else {
+        link = web;
+        }
+                    bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+             }
+         function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
+              var infoWindowVisible = (function () {
+                      var currentlyVisible = false;
+                      return function (visible) {
+                          if (visible !== undefined) {
+                              currentlyVisible = visible;
+                          }
+                          return currentlyVisible;
+                       };
+                   }());
+                   iw = new google.maps.InfoWindow();
+                   google.maps.event.addListener(marker, 'click', function() {
+                       if (infoWindowVisible()) {
+                           iw.close();
+                           infoWindowVisible(false);
+                       } else {
+                           var html= "<div style='color:#000;background-color:#fff;padding:5px;width:350px;'><h4>"+title+"</h4><br><p>"+desc+"<p><p>"+telephone+"<p><a href='"+link+"'' >"+web+"<a></div>";
+                           iw = new google.maps.InfoWindow({content:html});
+                           iw.open(map,marker);
+                           infoWindowVisible(true);
+                       }
+                });
+                google.maps.event.addListener(iw, 'closeclick', function () {
+                    infoWindowVisible(false);
+                });
+         }
+        }

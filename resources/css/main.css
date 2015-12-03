@@ -24,7 +24,7 @@ h1 {
 	font-size: 3.57143rem;
 	font-weight: 400;
 	line-height: normal;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 
 h2 {
@@ -47,6 +47,17 @@ h4 {
 	margin-bottom: 0px;
 }
 
+h4 span {
+	color: #333333;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 300;
+	margin-bottom: 2rem;
+	text-transform: lowercase;
+	margin-bottom: 0px;
+}
+
 section {
 	padding: 5% 0;
 }
@@ -55,6 +66,10 @@ a {
 	color: #F58233;
 }
 
+p {
+	color: #888;
+	font-weight: 300;
+}
 
 
 .mui-btn-danger {
@@ -75,7 +90,7 @@ a {
 
 .offwhite {
 	background-color: #f6f6f6;
-	padding: 5% 0;
+	padding: 8% 0;
 }
 
 .mui-appbar {
@@ -178,7 +193,7 @@ nav.mui-appbar ul li.active a {
 }
 
 .bg-section {
-	background-image: url('../img/header-image2.JPG');
+	background-image: url('../img/header-image2.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -200,7 +215,7 @@ nav.mui-appbar ul li.active a {
 }
 .bg-section h2 {
 	margin-top: 0rem;
-	text-shadow: 1px 1px 1px #333333;
+	text-shadow: 1px 1px 1px #363636;
 }
 
 .bg-section p {
@@ -214,15 +229,6 @@ nav.mui-appbar ul li.active a {
 	overflow: hidden;
 }
 
-/* Program section */
-#program {
-	padding: 5% 0;
-}
-@media only screen and (max-width: 740px) {
-	#program td span {
-		display: none;
-	}
-}
 
 /* Home section */
 #home {
@@ -237,6 +243,12 @@ nav.mui-appbar ul li.active a {
 #program {
 	text-align: left;
 	font-weight: 300;
+	padding: 5% 0;
+}
+@media only screen and (max-width: 740px) {
+	#program td span {
+		display: none;
+	}
 }
 #program h2 {
 	text-align: center;
@@ -246,6 +258,9 @@ nav.mui-appbar ul li.active a {
 /*Speakers section*/
 #speakers .mui-col-md-4 {
 	margin: 2em 0;
+}
+#speakers .offset {
+	margin-top: 2em;
 }
 #speakers img {
 	border-radius: 50%;
@@ -282,4 +297,14 @@ nav.mui-appbar ul li.active a {
 	color: #fff;
 	line-height: 60px;
 	margin: 0;
+}
+
+tbody > tr > td:nth-child(2) {
+	background: #F58233;
+	color: #fff;
+	font-weight: 400;
+}
+tbody > tr > td:nth-child(2) {
+/*	background: #FFC9A4;
+	font-weight: 400;*/
 }
