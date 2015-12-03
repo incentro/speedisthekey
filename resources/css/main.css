@@ -1,0 +1,285 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+body {
+	color: #333333;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 57px;
+	font-size: 3.57143rem;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: lowercase;
+}
+
+h2 {
+	color: #333333;
+	font-family: 'Raleway', sans-serif;
+	font-size: 36px;
+	font-size: 2.57143rem;
+	font-weight: 300;
+	margin-bottom: 2rem;
+	text-transform: lowercase;
+}
+
+h4 {
+	color: #333333;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	text-transform: lowercase;
+	margin-bottom: 0px;
+}
+
+section {
+	padding: 5% 0;
+}
+
+a {
+	color: #F58233;
+}
+
+
+
+.mui-btn-danger {
+	background: #F58233;
+}
+
+.mui-btn-danger:hover {
+	background: #da742d;
+}
+
+.header {
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.offwhite {
+	background-color: #f6f6f6;
+	padding: 5% 0;
+}
+
+.mui-appbar {
+	background-color: #ffffff;
+}
+
+.menu-button,
+.menu-button:active,
+.menu-button:hover,
+.menu-button:focus,
+.menu-button:visited {
+	color: #F58233;
+	text-decoration: none;
+}
+
+nav.mui-appbar ul {
+	margin: 0;
+}
+
+nav.mui-appbar ul li {
+	border-bottom: 4px solid transparent;
+}
+
+nav.mui-appbar ul a,
+nav.mui-appbar ul a:visited {
+	color: #333333;
+	display: inline-block;
+	font-weight: 300;
+	padding: 0px 15px;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+nav.mui-appbar ul a:active,
+nav.mui-appbar ul a:hover,
+nav.mui-appbar ul a:focus {
+	color: #F58233;
+	text-decoration: none;
+}
+
+nav.mui-appbar ul li.active {
+	border-color: #F58233;
+}
+
+nav.mui-appbar ul li.active a {
+	color: #F58233;
+}
+
+#sidedrawer {
+	background-color: #ffffff;
+	bottom: 0;
+	left: -200px;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	transition: left .2s;
+	width: 200px;
+	z-index: 2;
+}
+
+#sidedrawer.active {
+	left: 0;
+}
+#sidenav {
+	text-align: left;
+}
+
+#sidenav h2 {
+	padding-left: 22px;
+	margin: 0;
+}
+
+#sidenav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidenav li {
+	padding: 15px 22px;
+}
+
+#sidenav ul a,
+#sidenav ul a:visited {
+	color: #333333;
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+#sidenav ul a:active,
+#sidenav ul a:hover,
+#sidenav ul a:focus {
+	color: #F58233;
+	text-decoration: none;
+}
+
+#sidenav ul li.active a {
+	color: #F58233;
+}
+
+.bg-section {
+	background-image: url('../img/header-image2.JPG');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 650px;
+	left: 0;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+}
+
+.bg-section .mui-container {
+	margin-top: 8%;
+}
+
+.bg-section h1 {
+	margin-bottom: 0rem;
+	margin-top: 0.67em;
+	text-shadow: 1px 1px 3px #333333;
+}
+.bg-section h2 {
+	margin-top: 0rem;
+	text-shadow: 1px 1px 1px #333333;
+}
+
+.bg-section p {
+	color: #ffffff;
+	font-size: 17px;
+	font-size: 1.21429rem;
+	text-shadow: 1px 1px 3px #333333;
+}
+
+.mui-container {
+	overflow: hidden;
+}
+
+/* Program section */
+#program {
+	padding: 5% 0;
+}
+@media only screen and (max-width: 740px) {
+	#program td span {
+		display: none;
+	}
+}
+
+/* Home section */
+#home {
+	padding: 0%;
+}
+#home h2 {
+	color: #F58233;
+	font-size: 24px;
+}
+
+/* Program section */
+#program {
+	text-align: left;
+	font-weight: 300;
+}
+#program h2 {
+	text-align: center;
+}
+
+
+/*Speakers section*/
+#speakers .mui-col-md-4 {
+	margin: 2em 0;
+}
+#speakers img {
+	border-radius: 50%;
+	width: 200px;
+	border: 10px solid #F58233;
+}
+#speakers h4 {
+	margin: 1em;
+}
+@media screen and (max-width: 768px) {
+	#speakers p {
+		margin: 0 4em 10px;
+	}
+}
+
+/* Location section */
+#location-map {
+	height:400px;
+	width:100%;
+}
+/* Contact section */
+#contact {
+	background: #fff;
+	color: #333;
+	font-weight: 300;
+}
+/* Footer section */
+#footer {
+	background: #F58233;
+	height: 60px;
+	padding: 0;
+}
+#footer p {
+	color: #fff;
+	line-height: 60px;
+	margin: 0;
+}
