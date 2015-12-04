@@ -96,6 +96,9 @@ p {
 .mui-appbar {
 	background-color: #ffffff;
 }
+.logo{
+	float: left;
+}
 
 .menu-button,
 .menu-button:active,
