@@ -11,4 +11,5 @@ $(function() {
 	$('.jq-toggleMenu').on('click', function() {
 		toggleMenu();
 	});
+
 });
