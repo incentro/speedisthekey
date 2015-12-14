@@ -12,4 +12,12 @@ $(function() {
 		toggleMenu();
 	});
 
+	$(document).scroll(function() {
+		var y = $(this).scrollTop();
+		if (y > 600) {
+			$('.subscriber').fadeIn();
+		} else {
+			$('.subscriber').fadeOut();
+		}
+	});
 });

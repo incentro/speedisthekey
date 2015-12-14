@@ -11,7 +11,7 @@
             disableDoubleClickZoom: true,
             mapTypeControl: true,
             scaleControl: true,
-            scrollwheel: true,
+            scrollwheel: false,
             panControl: true,
             streetViewControl: true,
             draggable : true,
