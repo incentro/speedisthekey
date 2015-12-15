@@ -343,9 +343,19 @@ nav.mui-appbar ul li.active a {
 	border-radius: 50%;
 	width: 200px;
 	border: 10px solid #F58233;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 #speakers h4 {
 	margin: 1em;
+}
+#speakers a:hover {
+	text-decoration: none;
+	color: none;
+}
+#speakers img:hover {
+
 }
 #speakers .altcol {
 	border: 10px solid #00a5e3;
