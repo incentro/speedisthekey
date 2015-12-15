@@ -197,12 +197,12 @@ nav.mui-appbar ul li.active a {
 #sidenav ul a:active,
 #sidenav ul a:hover,
 #sidenav ul a:focus {
-	color: #F58233;
+	color: #00a5e3;
 	text-decoration: none;
 }
 
 #sidenav ul li.active a {
-	color: #F58233;
+	color: #00a5e3;
 }
 
 .bg-section {
@@ -310,13 +310,11 @@ nav.mui-appbar ul li.active a {
 	top: 30%;
 	background: #F58233;
 	color: #fff;
-	border-radius:10px 10px 0  0;
+	border-radius:10px  0  0 10px;
 	line-height: 35px;
 	margin: 0;
 	padding: 0;
 	display: none;
-	transform:rotate(-90deg);
-	transform-origin: 100% 100%;
 	z-index: 999;
 }
 
@@ -385,7 +383,7 @@ nav.mui-appbar ul li.active a {
 }
 /* Footer section */
 #footer {
-	background: #F58233;
+	background: #00a5e3;
 	padding: 0;
 }
 #footer p {
