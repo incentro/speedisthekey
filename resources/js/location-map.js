@@ -2,7 +2,7 @@
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(51.9232397,4.433419700000059),
+            center: new google.maps.LatLng(52.049497,5.091415),
             zoom: 15,
             zoomControl: true,
             zoomControlOptions: {
@@ -24,7 +24,7 @@
         var mapElement = document.getElementById('location-map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['Incentro - Hippo Event', 'Incentro Rotterdam<br />(building \'Koffie\', unit 2429, 4th floor)<br />Van Nelleweg 1<br />3044BC Rotterdam', '+31 (0)10 20 20 544', 'undefined', 'http://www.incentro.com/', 51.9232397, 4.433419700000059, 'https://mapbuildr.com/assets/img/markers/default.png']
+['Incentro - Hippo Event', 'Green Village<br />Blokhoeve 7<br />3438 LC Nieuwegein', '+31 (0) 6 115 926 22', 'undefined', 'http://www.incentro.com/', 52.049497, 5.091415, 'https://mapbuildr.com/assets/img/markers/default.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
@@ -65,7 +65,7 @@
                            iw.close();
                            infoWindowVisible(false);
                        } else {
-                           var html= "<div style='color:#000;background-color:#fff;padding:5px;width:350px;'><h4>"+title+"</h4><br><p>"+desc+"<p><p>"+telephone+"<p><a href='"+link+"'' >"+web+"<a></div>";
+                           var html= "<div style='color:#000;background-color:#fff;padding:5px;width:280px;'><h4>"+title+"</h4><br><p>"+desc+"<p><p>"+telephone+"<p><a href='"+link+"'' >"+web+"<a></div>";
                            iw = new google.maps.InfoWindow({content:html});
                            iw.open(map,marker);
                            infoWindowVisible(true);
