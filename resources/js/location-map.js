@@ -24,7 +24,7 @@
         var mapElement = document.getElementById('location-map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['Incentro - Hippo Event', 'Green Village<br />Blokhoeve 7<br />3438 LC Nieuwegein', '+31 (0) 6 115 926 22', 'undefined', 'http://www.incentro.com/', 52.049497, 5.091415, 'https://mapbuildr.com/assets/img/markers/default.png']
+['Speed is the Key', 'Green Village<br />Blokhoeve 7<br />3438 LC Nieuwegein', '+31 (0) 6 115 926 22', 'undefined', 'http://www.incentro.com/', 52.049497, 5.091415, 'https://mapbuildr.com/assets/img/markers/default.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
