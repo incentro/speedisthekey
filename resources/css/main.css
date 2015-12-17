@@ -151,7 +151,9 @@ nav.mui-appbar ul li.active {
 nav.mui-appbar ul li.active a {
 	color: #fff;
 }
-
+.mui-list-inline>li {
+	padding: 0 3px;
+}
 #sidedrawer {
 	background-color: #ffffff;
 	bottom: 0;
@@ -303,19 +305,27 @@ nav.mui-appbar ul li.active a {
 }
 /*Subscriber*/
 .subscriber {
-	width: 80px;
+	width: 110px;
 	height: 40px;
 	position: fixed;
 	right: 0;
 	top: 30%;
 	background: #F58233;
 	color: #fff;
-	border-radius:10px  0  0 10px;
-	line-height: 35px;
+	border-radius:2px  0  0 2px;
+	line-height: 40px;
 	margin: 0;
 	padding: 0;
 	display: none;
 	z-index: 999;
+	-webkit-animation-duration: 0;
+	-o-animation-duration: 0;
+	animation-duration: 0;
+	webkit-animation-name: none;
+	animation-name: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
 }
 
 
@@ -376,7 +386,37 @@ nav.mui-appbar ul li.active a {
 		margin: 0 4em 10px;
 	}
 }
+#date {
+	background: #00a5e3;
+}
+#date h2  {
+	color: #fff;
+	margin: 0;
+}
+#date h2 span {
+	border-bottom: 1px solid #efefef;
+	color: #333;
+	display: block;
+	margin-top: 14px;
+	padding: 20px 0;
+	width: 75%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#date .mui-btn-danger {
+	color: #000;
+	background: #fff;
+}
 
+#date .mui-btn-danger:hover {
+	color: #fff;
+	background: #000;
+}
+#event-countdown {
+	font-size: 14px;
+	margin: 10px 0;
+}
 /* Location section */
 #location-map {
 	height:650px;

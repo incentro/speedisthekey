@@ -4,43 +4,46 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Incentro Hippo Event</title>
+	<title>Speed is the key!</title>
 	<meta name="description" content="Incentro and Hippo present an event focused on partnership">
         	<link rel="shortcut icon" href="/resources/img/favicon.ico" type="image/x-icon" />
 
 	<link rel="stylesheet" href="resources/css/mui.min.css">
 	<link rel="stylesheet" href="resources/css/main.css">
-	<script src="resources/js/mui.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="resources/js/mui.min.js"></script>
+	<script src="resources/js/jquery.countdown.min.js"></script>
 	<script src="resources/js/main.js"></script>
+
 </head>
 <body>
 
 	<header class="header">
 		<nav class="mui-appbar mui-z1 mui-container-fluid">
 			<div class="mui-row">
-				<div class="mui-col-xs-6 mui-col-sm-5 mui-col-md-4 mui-col-lg-4">
+				<div class="mui-col-xs-6 mui-col-sm-3 mui-col-md-3 mui-col-lg-4">
 					<a href="http://www.incentro.com/" target="_blank">
 						<img src="resources/img/inc-hip2.png" alt="Logo Incentro" class="mui-appbar-height logo">
 					</a>
 				</div>
-				<div class="mui-hidden-xs mui-hidden-sm mui-col-xs-12  mui-col-md-8 mui-col-lg-8 mui-col-xs-offset-0 mui-col-sm-offset-0 mui-col-md-offset-0 mui-col-lg-offset-0 mui-text-right">
+				<div class="mui-hidden-xs mui-hidden-sm mui-col-xs-12  mui-col-md-9 mui-col-lg-8 mui-col-xs-offset-0 mui-col-sm-offset-0 mui-col-md-offset-0 mui-col-lg-offset-0 mui-text-right">
 					<ul id="top-menu" class="mui-list-inline mui-appbar-line-height">
 						<li class="active"><a href="#home">Home</a></li>
 						<li><a href="#introduction">Introductie</a></li>
 						<li><a href="#program">Programma</a></li>
 						<li><a href="#speakers">Sprekers</a></li>
+						<li><a href="#date">Datum</a></li>
 						<li><a href="#location-map">Locatie</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
-				<a class="mui-visible-xs mui-hidden-md mui-hidden-lg mui-col-xs-6 mui-col-sm-7  mui-text-right mui-appbar-line-height menu-button jq-toggleMenu">Menu</a>
+				<a class="mui-visible-xs mui-hidden-md mui-hidden-lg mui-col-xs-6 mui-col-sm-9  mui-text-right mui-appbar-line-height menu-button jq-toggleMenu">Menu</a>
 			</div>
 		</nav>
 	</header>
 	<div class="mui-appbar-height"></div>
 
-	<a href="http://go.onehippo.com/l/28592/2015-12-14/25s4b8" target="blank"><div class="subscriber">sign up</div></a>
+	<a href="http://go.onehippo.com/l/28592/2015-12-14/25s4b8" target="blank"><div class="subscriber mui-btn">aanmelden</div></a>
 
 	<section id="home">
 	<div class="home-container">
@@ -51,7 +54,7 @@
 					<h1>Speed is the key</h1>
 					<h2><p class="unskew">Incentro - Hippo Event</p></h2>
 					<p>Je kan heel 2016 vullen met programma’s om je organisatie agile te maken. Denk aan scrum, safe, less en meer. Maar de kern is simpel: speed is the key! Dit betekent een korte time-to-market, van idee tot realisatie naar evaluatie. Maar hoe doe je dat? Incentro en Hippo organiseren het event om de sleutel tot succes te delen. Speed is the key!</p>
-					<a href="#contact" class="mui-btn mui-btn-danger mui-btn-raised">Contact</a>
+					<a href="http://go.onehippo.com/l/28592/2015-12-14/25s4b8" target="blank" class="mui-btn mui-btn-danger mui-btn-raised">Aanmelden</a>
 				</div>
 			</div>
 		</div>
@@ -187,6 +190,17 @@
 
 	</div>
 </section>
+
+	<section id="date">
+		<div class="mui-container">
+			<div class="mui-col-md-10 mui-col-md-offset-1">
+				<h2>Save the Date <span>18 februari 2016</span>
+					<div id="event-countdown"></div>
+				</h2>
+				<a href="http://go.onehippo.com/l/28592/2015-12-14/25s4b8" target="blank" class="mui-btn mui-btn-danger">Aanmelden</a>
+			</div>
+		</div>
+	</section>
 
 <section id='location-map'></section>
 
