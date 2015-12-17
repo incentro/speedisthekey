@@ -386,9 +386,12 @@ nav.mui-appbar ul li.active a {
 		margin: 0 4em 10px;
 	}
 }
+
 #date {
 	background: #00a5e3;
+	padding: 10% 0;
 }
+
 #date h2  {
 	color: #fff;
 	margin: 0;
@@ -401,6 +404,7 @@ nav.mui-appbar ul li.active a {
 	padding: 20px 0;
 	width: 75%;
 	margin: 0 auto;
+	line-height: 50px;
 	text-transform: uppercase;
 	font-weight: bold;
 }

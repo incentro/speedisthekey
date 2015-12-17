@@ -24,7 +24,7 @@ $(function() {
 	$("#event-countdown")
 		.countdown("2016/02/18", function(event) {
 			$(this).text(
-				event.strftime('nog %-w weken en %-d dagen')
+				event.strftime('nog %-w weken, %-d dagen en %-H uren')
 			);
 		});
 
