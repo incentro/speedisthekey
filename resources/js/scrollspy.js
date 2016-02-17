@@ -12,7 +12,7 @@
 	menuItems.click(function(e){
 		var href = $(this).attr("href"),
 		 	offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-		$('html, body').stop().animate({
+		$('html, body').stop().animate({ 
 	  		scrollTop: offsetTop
 		}, 300);
 		e.preventDefault();
@@ -21,12 +21,11 @@
 	$('#home a').click(function(e){
 		var href = $(this).attr("href"),
 		 	offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-		$('html, body').stop().animate({
+		$('html, body').stop().animate({ 
 	  		scrollTop: offsetTop
 		}, 300);
 		e.preventDefault();
 	});
-
 
 	$(window).scroll(function(){
 		var fromTop = $(this).scrollTop()+topMenuHeight;
@@ -43,6 +42,6 @@
 	   		menuItems
 		 	.parent().removeClass("active")
 		 	.end().filter("[href=#"+id+"]").parent().addClass("active");
-		}
+		}                   
 	});
 })(jQuery);
