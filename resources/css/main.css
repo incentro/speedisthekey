@@ -94,7 +94,6 @@ p {
 .logo {
   float: left;
 }
-.hippo {}
 .menu-button, .menu-button:active, .menu-button:hover, .menu-button:focus, .menu-button:visited {
   color: #00a5e3;
   text-decoration: none;
@@ -300,19 +299,18 @@ nav.mui-appbar ul li.active a {
 
 /* Program section */
 
-#programma {
+#program {
   text-align: left;
   font-weight: 300;
   padding: 5% 0;
 }
 @media only screen and (max-width: 740px) {
-  #programma td span {
+  #program td span {
     display: none;
   }
 }
-#programma h2 {
+#program h2 {
   text-align: center;
-  padding-top: 4rem;
 }
 
 /*Speakers section*/
@@ -357,11 +355,9 @@ nav.mui-appbar ul li.active a {
 }
 #date, #download {
   background: #00a5e3;
-  padding: 10% 0;
 }
 #date, #download h2 {
   color: #fff;
-
 }
 /*#download h2 {
   font-size: 24px;
@@ -392,6 +388,9 @@ nav.mui-appbar ul li.active a {
 #date, #download .mui-btn-danger:hover {
   color: #fff;
   background: #000;
+}
+#download .centering {
+  padding: 4rem;
 }
 #event-countdown {
   font-size: 14px;
@@ -615,6 +614,11 @@ textarea {
 }
 .cbp-rfgrid li a img {
   max-width: 100%;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.imgs:hover img {
+  -webkit-transition: scale (1.3);
 }
 
 /* Flexbox is used for centering the heading */
