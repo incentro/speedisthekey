@@ -264,6 +264,10 @@ section {
 
 /* Program section */
 
+#program {
+  padding: 0;
+}
+
 .program {
   text-align: left;
   font-weight: 300;

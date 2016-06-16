@@ -1,10 +1,15 @@
 .timeline-wrapper {
   font-family: 'Raleway', sans-serif;
   color: #333;
-  background-color: #A8D4EF;
   margin: 0;
   padding: 4em 0 4em 0;
   position: relative;
+  background: #a8d4ef; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #a8d4ef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#a8d4ef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#a8d4ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a8d4ef',GradientType=0 ); /* IE6-9 */
+
 }
 
 .timeline {
