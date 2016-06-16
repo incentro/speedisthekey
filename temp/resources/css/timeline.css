@@ -117,7 +117,7 @@
 .time-wrapper {
   display: block;
   position: relative;
-  margin: 4px 0 0 0;
+  margin: 10px 10px 20px 10px;
   line-height: 1em;
   vertical-align: middle;
   color: #fff;
@@ -152,7 +152,7 @@
 .direction-l .desc,
 .direction-r .desc {
   position: relative;
-  margin: 1em 1em 0 1em;
+  margin: 1em 1em 2em 1em;
   padding: 1em;
   z-index: 1;
 }
@@ -216,7 +216,7 @@
   .time-wrapper {
     display: inline;
     vertical-align: middle;
-    margin: 0;
+    margin: 0 10px 0 10px;
   }
   .direction-l .time-wrapper {
     float: left;
