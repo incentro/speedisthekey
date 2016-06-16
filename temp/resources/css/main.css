@@ -362,7 +362,6 @@ section {
   border-radius: 8px;
   padding: 20px;
   margin:20px 0 25px 0;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .card_incentro {
   border: 2px solid orange;
