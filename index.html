@@ -8,9 +8,11 @@
   <title>Speed is the key!</title>
   <meta name="description" content="Incentro and Hippo present an event focused on partnership">
   <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon" />
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="resources/css/mui.min.css">
   <link rel="stylesheet" href="resources/css/main.css">
+  <link rel="stylesheet" href="resources/css/timeline.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="resources/js/mui.min.js"></script>
   <script src="resources/js/main.js"></script>
@@ -47,11 +49,10 @@
         </div>
         <div class="mui-hidden-xs mui-hidden-sm mui-col-xs-12  mui-col-md-9 mui-col-lg-8 mui-col-xs-offset-0 mui-col-sm-offset-0 mui-col-md-offset-0 mui-col-lg-offset-0 mui-text-right">
           <ul id="top-menu" class="mui-list-inline mui-appbar-line-height">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#introduction">Terugblik</a></li>
-            <li><a href="#images">Afbeeldingen</a></li>
-            <li><a href="#downloads">Downloads</a></li>
+            <li class="active"><a href="#header">Home</a></li>
+            <li><a href="#introduction">Introductie</a></li>
             <li><a href="#program">Programma</a></li>
+            <li><a href="#organisation">Organisatie</a></li>
             <li><a href="#contact">Contact<div class="subscriber mui-btn">contact</div></a></li>
           </ul>
         </div>
@@ -63,15 +64,14 @@
 
 
 
-  <section id="home">
-    <div class="home-container">
-      <div class="homepage-left"></div>
-      <div class="homepage-right"></div>
-      <div class="mui-container text-center">
+  <section id="header">
+    <div class="header-container">
+      <div class="header-img"></div>
+      <div class="header mui-container text-center">
         <div class="home-text">
-          <h1>Speed is the key</h1>
-          <p>Je kan heel 2016 vullen met programma’s om je organisatie agile te maken. Denk aan scrum, safe, less en meer. Maar de kern is simpel: speed is the key! Dit betekent een korte time-to-market, van idee tot realisatie naar evaluatie. Maar hoe doe
-            je dat? Incentro en Hippo organiseren het event om de sleutel tot succes te delen. Speed is the key!</p>
+          <h1 class="header-title">Migrate</h1>
+          <p>Laten we niet om de hete brij heen draaien. Niemand houdt van upgrades of systeemmigraties. Het zijn lange, complexe trajecten, met uitdijende scope, veel energie in het behouden van wat al is en oneindige projectafhankelijkheden en risico’s.
+            Geen wonder dat het vaak wordt uitgesteld totdat het echt niet meer kan. Do or die! Maar of dat nou zo slim is?</p>
         </div>
       </div>
     </div>
@@ -79,237 +79,185 @@
 
   <section id="introduction" class="offwhite">
     <div class="mui-container">
-      <div class="mui-col-md-8 mui-col-md-offset-2">
-        <h2>Terugblik</h2>
-        <p class="cite"><q>If you want to go quickly. Go alone. If you want to go far. Go together.</q> - Afrikaans spreekwoord</p>
-        <p>Er is niet één route naar succes. Soms moet je ervoor kiezen snel meters te maken. Soms moet je ervoor kiezen verder te reiken. Wat interessant is om te zien, is dat alle organisaties in de agile transitie min of meer dezelfde dingen meemaken. Het transformeren van business owners naar stakeholders, het neerhalen van organisatorische silo’s en - misschien wel het belangrijkste - het bouwen van vertrouwen komen telkens terug. </p>
-        <p>Hieronder vindt u een sfeerimpressie van ‘Speed is the Key’, waar verschillende sprekers dit thema behandelden en met praktijkvoorbeelden vertelden hoe zij hiermee omgaan.</p>
+      <div class="icon"><img src="resources/img/icon_Utopia.png" alt=""></div>
+      <h2>Utopia</h2>
+      <div class="mui-col-md-5 mui-col-md-offset-1">
+
+        <p>Upgrades, migraties, wij weten er alles van. En wij nemen je mee op een reis door het ideale project. Waar begin je mee? Wat is de invloed van je marketing- en contentstrategie op latere keuzes? Wanneer begin je met je ideale architectuur, en
+          wanneer met je tone of voice opzet? Waarom moet je eerst energie in je contentmodel steken, voordat je de techniek aan gaat raken? En het allerbelangrijkste, hoe grijpen de onderdelen marketing, IT en content-management in elkaar?</p>
       </div>
-    </div>
-  </section>
-
-  <!-- <section id="video">
-    <h2>Video</h2>
-    <div class="videowrapper">
-      <div class="video-container">
-        <iframe id="ytplayer" type="text/html" max-width="960" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section> -->
-
-  <section>
-    <ul class="cbp-rfgrid" id="images">
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0011.jpg">
-          <img src="resources/img/event/photo_s/DSC_0011.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0014.jpg"><img src="resources/img/event/photo_s/DSC_0014.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0023.jpg"><img src="resources/img/event/photo_s/DSC_0023.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0027.jpg"><img src="resources/img/event/photo_s/DSC_0027.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0025.jpg"><img src="resources/img/event/photo_s/DSC_0025.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0031.jpg"><img src="resources/img/event/photo_s/DSC_0031.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0034.jpg"><img src="resources/img/event/photo_s/DSC_0034.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0046.jpg"><img src="resources/img/event/photo_s/DSC_0046.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0048.jpg"><img src="resources/img/event/photo_s/DSC_0048.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0049.jpg"><img src="resources/img/event/photo_s/DSC_0049.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0068.jpg"><img src="resources/img/event/photo_s/DSC_0068.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0082.jpg"><img src="resources/img/event/photo_s/DSC_0082.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0094.jpg"><img src="resources/img/event/photo_s/DSC_0094.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0098.jpg"><img src="resources/img/event/photo_s/DSC_0098.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0101.jpg"><img src="resources/img/event/photo_s/DSC_0101.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0104.jpg"><img src="resources/img/event/photo_s/DSC_0104.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0108.jpg"><img src="resources/img/event/photo_s/DSC_0108.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-      <li>
-        <a class="imgs" target="_blank" href="resources/img/event/photo_l/DSC_0118.jpg"><img src="resources/img/event/photo_s/DSC_0118.jpg" />
-          <div>
-            <h3>Click for full image</h3></div>
-        </a>
-      </li>
-
-    </ul>
-  </section>
-
-  <section id="download">
-    <div class="mui-container" id="downloads">
-      <div class="mui-col-md-10 mui-col-md-offset-1 centering">
-        <h2>Downloads</h2>
-        <p>De presentaties en het videomateriaal van deze dag kunt u hier terug vinden</p>
-        <a href="http://goo.gl/forms/ebcs7eoEen" target="_blank" class="mui-btn mui-btn-danger">Download</a>
+      <div class="mui-col-md-5">
+        <p>Om alvast een tip van de sluier te lichten, belangrijk is om alle partijen vanaf het begin goed aan te haken. En voor alle partijen helder te hebben wat hun taken, verantwoordelijkheden en afhankelijkheden zijn. Vandaag zal je leren hoe dat eruit
+          ziet. Vandaag nemen wij je mee op een reis door het ideale project.</p>
       </div>
     </div>
   </section>
 
   <section id="program">
-    <div class="mui-container">
+    <div class="timeline-wrapper">
+      <div class="icon"><img src="resources/img/icon_Programme.png" alt=""></div>
       <h2>Programma</h2>
-      <table class="mui-table mui-table-bordered">
-        <thead>
-          <tr>
-            <th>Tijd</th>
-            <th>Topic</th>
-            <th>Spreker</th>
-          </tr>
-        </thead>
-        <tbody>
-
-          <tr>
-            <td>08:30 <span> - 09:00</span></td>
-            <td>deuren open</td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>09:00 <span>- 09:15</span></td>
-            <td>welkom</td>
-            <td>Reinier van Scherpenzeel - Incentro</td>
-          </tr>
-
-          <tr>
-            <td>09:15 <span>- 09:45</span></td>
-            <td>keynote</td>
-            <td>Arjé Cahn - Hippo</td>
-          </tr>
-
-          <tr>
-            <td>09:45 <span>- 10:15</span></td>
-            <td>case</td>
-            <td>Lisette Hartwijk - de Jonge - Air Miles</td>
-          </tr>
-
-          <tr>
-            <td>10:15 <span>- 10:30</span></td>
-            <td>pauze</td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td>10:30 <span>- 11:00</span></td>
-            <td>panel</td>
-            <td>Lisette Hartwijk - de Jonge - Air Miles / Lieneke Roos - ANWB / Mathijs Urbanczyk - Univé</td>
-          </tr>
-
-          <tr>
-            <td>11:00 <span>- 11:45</span></td>
-            <td>ronde-tafel</td>
-            <td> 1. Integraties & systemen
-              <br /> 2. Omgang met niet Agile organisaties
-              <br /> 3. Closing the feedback loop"</td>
-          </tr>
-
-          <tr>
-            <td>11:45 <span>- 12:00</span></td>
-            <td>afsluiting</td>
-            <td>Reinier van Scherpenzeel / Arjé Cahn</td>
-          </tr>
-
-          <tr>
-            <td>12:00 <span>- 13:00</span></td>
-            <td>lunch</td>
-            <td></td>
-          </tr>
-
-        </tbody>
-      </table>
+      <ul class="timeline">
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">welkom</span>
+              <span class="time-wrapper"><span class="time">deuren geopend</span></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">start</span>
+              <span class="time-wrapper"><span class="time">visie/strategie</span></span>
+            </div>
+            <div class="desc">Reinier van Scherpenzeel - Incentro</div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">keynote</span>
+              <span class="time-wrapper"><span class="time">selectie</span></span>
+            </div>
+            <div class="desc">Arjé Cahn - Hippo</div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">case</span>
+              <span class="time-wrapper"><span class="time">plan</span></span>
+            </div>
+            <div class="desc">Lisette Hartwijk - de Jonge - Air Miles</div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">pauze</span>
+              <span class="time-wrapper"><span class="time">10:15 - 10:30</span></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">panel</span>
+              <span class="time-wrapper"><span class="time">realisatie</span></span>
+            </div>
+            <div class="desc">Lisette Hartwijk - de Jonge - Air Miles / Lieneke Roos - ANWB / Mathijs Urbanczyk - Univé</div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">ronde-tafel</span>
+              <span class="time-wrapper"><span class="time">testen</span></span>
+            </div>
+            <div class="desc">1. Integraties &amp; systemen
+              <br> 2. Omgang met niet Agile organisaties
+              <br> 3. Closing the feedback loop"</div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">afsluiting</span>
+              <span class="time-wrapper"><span class="time">go-live</span></span>
+            </div>
+            <div class="desc">Reinier van Scherpenzeel / Arjé Cahn</div>
+          </div>
+        </li>
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">lunch</span>
+              <span class="time-wrapper"><span class="time">12:00 - 13:00</span></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="mountains">
+        <div class="mountain">
+          <div class="mountain-top">
+            <div class="mountain-cap-1"></div>
+            <div class="mountain-cap-2"></div>
+            <div class="mountain-cap-3"></div>
+          </div>
+        </div>
+        <div class="mountain-two">
+          <div class="mountain-top">
+            <div class="mountain-cap-1"></div>
+            <div class="mountain-cap-2"></div>
+            <div class="mountain-cap-3"></div>
+          </div>
+        </div>
+        <div class="mountain-three">
+          <div class="mountain-top">
+            <div class="mountain-cap-1"></div>
+            <div class="mountain-cap-2"></div>
+            <div class="mountain-cap-3"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="offwhite">
+  <section id="organisation" class="offwhite">
     <div class="mui-container">
-      <div class="mui-col-md-10 mui-col-md-offset-1">
-        <h2 class="spacer" id="contact">Contact</h2>
-        <p>Is snelheid voor jullie ook de sleutel? Of wil je meer weten over hoe je dat kan bereiken? Neem dan contact op, dan maken we nader kennis!
-          <p class="spacer">Bel <a href='tel:0611592622'>+31 (0) 6 115 926 22</a> of </p>
-          <a href="mailto:reinier.vanscherpenzeel@incentro.com?subject=Ik ben van de partij!" class="mui-btn mui-btn-danger mui-btn-raised">Stuur een e-mail</a>
+      <div class="icon"><img src="resources/img/icon_Organisation.png" alt=""></div>
+      <h2>Organisatie</h2>
+      <div class="mui-col-md-4">
+        <div class="cards card_incentro">
+          <div class="cards__image"><img src="resources/img/logo_incentro.jpg" alt=""></div>
+          <h3>Incentro</h3>
+          <p>Zijn er specifieke onderwerpen die je graag wilt bespreken? Een onderwerp voor de ronde-tafel sessies? Of praktische vragen? Laat het ons weten! Het gaat immers om jou. </p>
+        </div>
+      </div>
+      <div class="mui-col-md-4">
+        <div class="cards card_hippo">
+          <div class="cards__image"><img src="resources/img/logo_hippo.jpg" alt=""></div>
+          <h3>Hippo</h3>
+          <p>Zijn er specifieke onderwerpen die je graag wilt bespreken? Een onderwerp voor de ronde-tafel sessies? Of praktische vragen? Laat het ons weten! Het gaat immers om jou. </p>
+        </div>
+      </div>
+      <div class="mui-col-md-4">
+        <div class="cards card_crossphase">
+          <div class="cards__image"><img src="resources/img/logo_crossphase.jpg" alt=""></div>
+          <h3>Crossphase</h3>
+          <p>Zijn er specifieke onderwerpen die je graag wilt bespreken? Een onderwerp voor de ronde-tafel sessies? Of praktische vragen? Laat het ons weten! Het gaat immers om jou. </p>
+        </div>
+      </div>
 
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="mui-container">
+      <div class="icon"><img src="resources/img/icon_Contact.png" alt=""></div>
+      <h2>Contact</h2>
+      <div class="mui-col-md-10 mui-col-md-offset-1">
+        <p>Zijn er specifieke onderwerpen die je graag wilt bespreken? Een onderwerp voor de ronde-tafel sessies? Of praktische vragen? Laat het ons weten! Het gaat immers om jou. </p>
+        <!-- <p class="spacer">Bel <a href='tel:0611592622'>+31 (0) 6 115 926 22</a> of </p> -->
+          <a href="mailto:reinier.vanscherpenzeel@incentro.com?subject=Ik ben van de partij!" class="mui-btn mui-btn-danger mui-btn-raised">Stuur een e-mail</a>
       </div>
     </div>
   </section>
 
   <section id="footer">
-    <p>Speed is the key! is een initiatief van Incentro en Hippo. Voor meer informatie, bezoek <a href="http://www.incentro.nl" target="blank">www.incentro.nl</a> of <a href="http://www.onehippo.com/nl" target="blank">www.onehippo.com</a></p>
+    <p>Migrate! is een initiatief van Incentro, Hippo en Crossphase. Voor meer informatie, bezoek <a href="http://www.incentro.nl" target="blank">www.incentro.nl</a>, <a href="http://www.onehippo.com/nl" target="blank">www.onehippo.com</a> of <a href="http://www.crossphase.nl"
+        target="blank">www.crossphase.nl</a></p>
   </section>
 
   <script src="resources/js/scrollspy.js"></script>
