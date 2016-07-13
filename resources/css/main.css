@@ -95,9 +95,9 @@ nav.mui-appbar ul li.active {
   background: #00a5e3;
   color: #fff;
 }
-.mui-appbar-height {
+/*.mui-appbar-height {
   height: 0;
-}
+}*/
 nav.mui-appbar ul li.active a {
   color: #fff;
 }
