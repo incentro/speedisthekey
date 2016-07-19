@@ -43,6 +43,29 @@ p {
 
 /*Buttons*/
 
+
+.btn {
+  display: block;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  max-width: 400px;
+  background:#ff7d00;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  font-weight:700;
+  pointer-events: auto;
+  margin: 0 auto;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background:#CC4949;
+  color: white;
+  text-decoration: none;
+}
+
 .mui-btn-danger {
   background: #F58233;
 }
@@ -212,9 +235,13 @@ section {
   font-size: 2em;
   color: #fff;
 }
-.header {
-
+.header-subtitle {
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  font-size: 3em;
+  text-transform: none;
 }
+
 .header p {
   color: #fff;
   font-size: 1.1em;
@@ -239,6 +266,34 @@ section {
     margin: 8% 25%;
   }
 }
+
+.intro-bullets {
+  text-align: left;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #888;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+
+ul.intro-bullets {
+  list-style: none;
+  padding:0;
+}
+
+ul.intro-bullets li {
+  padding-left: 1em;
+  text-indent: -.5em;
+}
+
+ul.intro-bullets li:before {
+  content: "• ";
+  color: #F58233;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+
 
 /*Subscriber*/
 
@@ -362,10 +417,19 @@ section {
 /* Organisation */
 
 .cards {
+  display: block;
+  cursor: pointer;
   background: #fff;
   border-radius: 8px;
   padding: 20px;
   margin:20px 0 25px 0;
+}
+
+a.cards:hover, a.cards:active, a.cards:focus {
+  text-decoration: none;
+}
+a.cards:hover h3, a.cards:active h3, a.cards:focus h3 {
+  text-decoration: underline;
 }
 .card_incentro {
   border: 2px solid orange;
@@ -446,21 +510,47 @@ textarea {
 }
 
 [type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  width: 95%;
   background:#ff7d00;
   border-radius:5px;
   border:0;
   cursor:pointer;
   color:white;
-  font-size:24px;
   padding-top:10px;
   padding-bottom:10px;
   transition: all 0.3s;
-  margin-top:-4px;
+  /*margin-top: 15px;*/
+  margin-right: 8px;
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+.hs-error-msgs {
+  list-style: none;
+  padding: 0;
+  font-size: .8em;
+  color: red;
+}
+
+.hs-form fieldset {
+  margin: 10px 0 !important;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #888;
+}
+
+.hs-form label span {
+  font-weight: 300;
+}
+
+.hs-form-required {
+  font-size: .6em;
+  vertical-align: super;
+}
+
+input[type="text"], input[type="email"], textarea {
+  color: black;
+}
 
 /*event images*/
 
