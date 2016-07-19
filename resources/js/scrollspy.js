@@ -9,6 +9,18 @@
 			if (item.length) { return item; }
 		});
 
+	var aanmeldLink = $('.btn-aanmeldlink');
+
+	aanmeldLink.click(function(e) {
+		var href = $(this).attr("href"),
+			offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+		$('html, body').stop().animate({
+			scrollTop: offsetTop
+		}, 300);
+		e.preventDefault();
+	});
+
+
 	menuItems.click(function(e){
 		var href = $(this).attr("href"),
 		 	offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
