@@ -247,6 +247,21 @@ section {
   text-transform: none;
 }
 
+h4.header-address {
+  margin: 15px 0 20px 0;
+}
+
+h4.header-address > p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.5;
+}
+
+
 .header p {
   color: #fff;
   font-size: 1.1em;
